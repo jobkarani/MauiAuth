@@ -6,9 +6,14 @@
     xmlns:local="clr-namespace:MauiAuth"
     Shell.FlyoutBehavior="Flyout">
 
-    
 
     <ShellItem Route="LoginPage" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
+    </ShellItem>
+    <ShellItem Route="RegistrationPage" FlyoutItemIsVisible="False">
+        <ShellContent ContentTemplate="{DataTemplate local:RegistrationPage}"/>
+    </ShellItem>
+    <ShellItem Route="Logout" FlyoutItemIsVisible="False">
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
     </ShellItem>
 
