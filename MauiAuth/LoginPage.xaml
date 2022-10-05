@@ -2,14 +2,22 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAuth.LoginPage"
-             Title="LoginPage">
+             Title="LoginPage"
+             Shell.FlyoutBehavior="Disabled">
     <ContentPage.Content>
         <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image
+                Source="https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295429__340.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            
             <Label Text="Username:"/>
             <Entry Placeholder="Username"/>
             <Label Text="Password:"/>
             <Entry IsPassword="True" Placeholder="Password"/>
             <Button Text="Login" Clicked="Button_Clicked"/>
+            
             <Label Text="Register" HorizontalOptions="Center" >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
