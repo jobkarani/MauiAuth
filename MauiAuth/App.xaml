@@ -8,12 +8,6 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-                <ResourceDictionary>
-                    <Style TargetType="Entry" >
-                        <Setter Property="BackgroundColor" Value="#F9F9F9"/>
-                        <Setter Property="Margin" Value="8"/>
-                    </Style>
-                </ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
