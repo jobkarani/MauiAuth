@@ -4,25 +4,41 @@
              x:Class="MauiAuth.LoginPage"
              Title="LoginPage"
              Shell.FlyoutBehavior="Disabled">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="TextColor" Value="#43237d"/>
+                <Setter Property="Margin" Value="4"/>
+            </Style>
+            
+            <Style TargetType="Button" x:Key="buttonStyles">
+                <Setter Property="Background" Value="#d09e29"/>
+                <Setter Property="Margin" Value="4"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
             <Image
-                Source="https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295429__340.png"
+                Margin="40"
+                Source="https://pilongtermbackups.s3.amazonaws.com/Zamupay/images/purpleRabbit.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
-            
-            <Label Text="Username:"/>
-            <Entry Placeholder="Username"/>
-            <Label Text="Password:"/>
-            <Entry IsPassword="True" Placeholder="Password"/>
+
+            <Label Text="Username"/>
+            <Entry x:Name="Username"  Placeholder="Username"/>
+            <Label Text="Password"/>
+            <Entry x:Name="Password" IsPassword="True" Placeholder="Password"/>
             <Button Text="Login" Clicked="Button_Clicked"/>
             
-            <Label Text="Register" HorizontalOptions="Center" >
-                <Label.GestureRecognizers>
+            <Button Text="Register" Style="{StaticResource buttonStyles}" >
+                <Button.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                </Label.GestureRecognizers>
-            </Label>
+                </Button.GestureRecognizers>
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

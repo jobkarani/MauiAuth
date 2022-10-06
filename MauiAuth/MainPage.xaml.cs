@@ -23,7 +23,7 @@ public partial class MainPage : ContentPage
 
 	public async void ToolbarItem_Clicked(object sender, EventArgs e)
 	{
-        await Shell.Current.GoToAsync("LoginPage");
+        await Shell.Current.GoToAsync("///LoginPage");
     }
 }
 

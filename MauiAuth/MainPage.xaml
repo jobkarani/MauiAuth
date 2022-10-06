@@ -7,6 +7,15 @@
         <ToolbarItem Text="Logout" Clicked="ToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" x:Key="labelStyle">
+                <Setter Property="TextColor" Value="#43237d"/>
+                <Setter Property="FontSize" Value="32"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
@@ -20,6 +29,7 @@
                 HorizontalOptions="Center" />
 
             <Label
+                Style="{StaticResource labelStyle}"
                 Text="Hello, World!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
