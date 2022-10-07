@@ -22,12 +22,13 @@
         <StackLayout Padding="40,0,40,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
             <Border Stroke="#C49B33"
                 StrokeThickness="0.8"
+                BackgroundColor="#fff"
                 StrokeShape="RoundRectangle 160,160,160,160"
                 Padding="16,16"
                 HorizontalOptions="Center">
                 <Image
                     Margin="10"
-                    Source="https://pilongtermbackups.s3.amazonaws.com/Zamupay/images/purpleRabbit.png"
+                    Source="https://beta.zamupay.com/Account/GetCustomerLogo/a393c67c-158b-ec11-ab86-0ee00e897f52"
                     SemanticProperties.Description="Cute dot net bot waving hi to you!"
                     HeightRequest="60"
                     WidthRequest="60"
@@ -35,30 +36,30 @@
             </Border>
             <Label Text="Hello there," HorizontalOptions="CenterAndExpand" Margin="0,10,0,10" TextColor="#43237d" FontSize="18"/>
 
-            <Label Text="Login To Continue" HorizontalOptions="CenterAndExpand" Margin="0,10,0,10" TextColor="#43237d" FontSize="22" TextDecorations="Strikethrough" />
+            <Label Text="Login To Continue" HorizontalOptions="CenterAndExpand" Margin="0,10,0,10" TextColor="#43237d" FontSize="22" FontAttributes="Bold" />
 
-            <Border StrokeThickness="0.5"
+            <Border StrokeThickness="0"
                     BackgroundColor="#CFD2CF"
-                    Margin="0,20,0,20"
+                    Margin="20,20,20,10"
                     StrokeShape="RoundRectangle 5,5,5,5">
                 <Entry x:Name="Username" HorizontalOptions="Center" PlaceholderColor="#000"  Placeholder="Username"/>
             </Border>
 
-            <Border StrokeThickness="0.5"
+            <Border StrokeThickness="0"
                     BackgroundColor="#CFD2CF"
-                    Margin="0,20,0,20"
+                    Margin="20,10,20,20"
                     StrokeShape="RoundRectangle 5,5,5,5">
                 <Entry x:Name="Password" HorizontalOptions="Center" PlaceholderColor="#000" IsPassword="True" Placeholder="Password"/>
             </Border>
 
-            <Button BackgroundColor="#43237d" Margin="0,20,0,0" TextColor="#fff" Text="Sign In" Clicked="Button_Clicked"/>
+            <Button BackgroundColor="#43237d" Margin="20,20,20,0" TextColor="#fff" Text="Sign In" Clicked="Button_Clicked"/>
             
-            <Button Text="Sign Up" TextColor="#fff" Margin="0,20,0,0" Style="{StaticResource buttonStyles}" >
+            <Button Text="Sign Up" TextColor="#fff" Margin="20,20,20,0" Style="{StaticResource buttonStyles}" >
                 <Button.GestureRecognizers>
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                 </Button.GestureRecognizers>
             </Button>
-            <Label Text="Forgot Password?" Margin="5,20,0,0" Style="{StaticResource labelStyle}"/>
+            <Label Text="Forgot Password?" Margin="25,20,0,0" Style="{StaticResource labelStyle}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
