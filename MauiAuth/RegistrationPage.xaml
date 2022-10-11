@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAuth.RegistrationPage"
-             Title="RegistrationPage"
              BackgroundColor="#dfe4ed">
 
     <ContentPage.Resources>
@@ -68,7 +67,7 @@
             </Border>
 
             <Button Text="Register"
-                    Margin="50,2istra0,50,0"
+                    Margin="50,20,50,0"
                     TextColor="#fff"
                     BorderColor="#fff"
                     BackgroundColor="#C49B33"
